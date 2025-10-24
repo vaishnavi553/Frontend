@@ -4,7 +4,6 @@ const qrcodeContainer = document.getElementById('qrcode');
 
 generateBtn.addEventListener('click', () => {
     const text = textInput.value.trim();
-
     if (text === "") {
         alert("Please enter some text or URL");
         return;
@@ -23,3 +22,4 @@ generateBtn.addEventListener('click', () => {
         correctLevel : QRCode.CorrectLevel.H
     });
 });
+ 
